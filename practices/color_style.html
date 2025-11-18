@@ -1,0 +1,47 @@
+"<!--YS 6th styling with color practice-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Theory Boxes</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            border :4px solid;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .complementary {
+            background-color: blue; 
+            border-color:orange; 
+            color: orange;
+        }
+        .analogous {
+            background-color: yellowgreen; 
+            border-color: yellow; 
+            color: green;
+        }
+        .triadic {
+            background-color: red; 
+            border-color: blue; 
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Color Theory Examples</h1>
+    <div class = "container">
+        <div class = "box complementary"> complementary <br>blue & orange</div>
+        <div class = "box analogous"> analogous <br>yellowgreen, yellow & green</div>
+        <div class = "box triadic"> triadic <br>red, blue & yellow</div>
+    </div>
+</body>
+</html>"
