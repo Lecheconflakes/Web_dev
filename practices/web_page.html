@@ -10,54 +10,84 @@
     </head>
     <style>
         body{
-            background-color: rgb(2, 2, 2);
-            font-size: 10px;
-            color: rgb(100, 143, 207);
+            background-color: rgb(0, 0, 0);
+            font-size: 18px;
+            color: rgb(22, 125, 250);
              font-family: "Titillium Web", sans-serif;
                 font-weight: 600;
                 font-style: normal;
+                margin:0;
+                padding:0;
         }
-        image{width:400px ; height: auto;}
-         img{
-            height: 150px;
-            width: auto;
-        }
-        #left{
-           
-            margin-right :10px;
-        }
-        #right{
-           
-            margin-left: 10px;
+        h1{
+            text-align: center;
+            margin: 20px;
+            font-size: 2.5rem;
         }
         #content-wrapper{
             display: grid;
-            grid-template-columns: 25% 75%;  
-        } 
-        #one-wrapper{
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 20px
+        
+        }
+        #text-selection{
+            display:flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        img{
+            max-width: 45%;
+            height: auto;
+            border-radius:8px;
+        }
+        h2, h3{
+            margin-bottom:10px;
+            font-size: 2rem;
+        }
+        p{
+            line-height: 1.5;
+        }       
+        ul{
+            margin-left:20px
+        }
+        a{
+            color: rgb(245, 141, 182);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #image-row{
             display: flex;
+            gap: 10px;
             justify-content: center;
-            flex-wrap: wrap;
+            margin:20px 0;
+        } 
+        #image-row img{
+           max-width: 45%;
+            height: auto;
+            border-radius: 8px;
         }
         
     </style>
      </head>
     <body>
-     <h1 style="text-align: center;">||What to know about F1||</h1>
-      <div id ="content-wraper"
-    <div id = "left">
-        <img src = "https://f1chronicle.com/wp-content/uploads/2024/01/SI202412010400-1920x1080.jpg" alt ="18 formula 1 cars starting on the first lap" height="500px" />
+     <h1 style="text-align: center;">▀▄▀▄▀▄▀What to know about F1▀▄▀▄▀▄▀</h1>
+      <div id ="content-wraper">
 </div>
-    
+    <div id="text-selection">
         <h3>What Even Is Formula 1?</h3>
         <p>F1, or Formula 1, is the highest class of international single-seater auto racing, considered the pinnacle of motorsport.<br>
- It is a global team sport where drivers compete</br> for the World Championship while their teams fight for the Constructors' Championship.</br> The "formula" in the name refers to the set of rules</br> all participants must follow regarding their cars. </p>
+ It is a global team sport where drivers compete</br> for the World Championship while their teams fight for the Constructors' Championship.</br> The "formula" in the name refers to the set of rules</br> all participants must follow regarding their cars. </p>  
             <h3>Facts About Formula 1</h3>
             <p>Formula 1 is a high-tech racing sport featuring the world's fastest regulated cars,</br> which use advanced aerodynamics to achieve extreme speeds and cornering forces. Key facts include the immense physical demands on drivers,</br> the massive team sizes, the incredible cost of running a team,</br> and the highly specialized and expensive technology of the cars, like their short-lived engines. </p>
- <div id = "right">
+ <div id ="image-row">
     <img src = "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2023-11/231121-formula-one-grand-prix-las-vegas-ew-553p-227b5f.jpg" alt = "Redbull f1 car  coming down the las vegas circit." height="400px"/>
-    
+    <img src = "https://www.jalopnik.com/jalopnik/images/rfd3pckg2iguz1ko5ugs.jpg" alt = "Mercedes f1 car driven by lewis hamilton." height="400px"/>
 </div>
+<div< id="text-selection">
             <h2> How many tracks are there in Formula 1? Which are most famous?</h2>
             <p>There are 24 tracks in the current Formula 1 calendar, but it variers on the year and seaons because they may add or take away some cirtues or chnage them once their contracts expire. </p>
             <ul>
@@ -69,6 +99,7 @@
             <li>Interlagos (Brazil): A classic and challenging circuit that runs counter-clockwise and is known for its passionate fans. </li>
          </ul>
         <a href ="https://racingnews365.com/formula-1-circuits" target="_blank"> More info about tracks</a>
-         
+         </div>
+    
         </body>
 </html>
