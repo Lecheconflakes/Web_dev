@@ -1,3 +1,4 @@
+<!--Ys 6th Java Notes-->
 <!-- YS  6th advanced CSS notes-->
 
  <!DOCTYPE html>
@@ -41,10 +42,25 @@
         }
         
     </style>
+    <script>
+        showing = "none"
+        function show(){
+            if(doc.getElementByID("hidden") == "none")
+            showing = "block"
+        document.getElementByID("button").innerHTML = "show less"
+        }else{
+            document.getElementByID("hidden").style.display = "none"
+            showing = "none"
+            document.ElementByID("button").innerHTML = "show more"
+        }
+    {funtion change
+ }
+    
+    </script>
  </head>
  <body>
     <h1>Title</h1>
-    <button> click me</button>
+    <button id="button" oneclick = {show()}> show more</button>
     
     <div id ="content-wraper"
     <div id = "left">
