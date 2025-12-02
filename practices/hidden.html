@@ -1,51 +1,118 @@
-<!-- YS 6th  Hidden image-->
+<!-- YS 6th Hidden image-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My favortie Drivers from F1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My favorite Drivers from F1</title>
+  <style>
+    body {
+      background-color: black;
+      color: rgb(60, 0, 128);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    .driver {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .driver img {
+      width: 450px;   
+      height: auto;
+      border: 3px solid #1f04ef;
+      margin: 15px;
+      transition: transform 0.3s ease;
+    }
+    .driver img:hover {
+      transform: scale(1.1); 
+    }
+    #secretSpot {
+      width: 250px;
+      height: 60px;
+      background: rgb(138, 111, 243);
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      margin: 40px auto;
+      font-weight: bold;
+    }
+    #hiddenImage {
+      width: 500px;   /* bigger hidden image */
+      border: 4px solid rgb(75, 0, 110);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      margin: 20px auto;
+      display: block;
+    }
+    #secretSpot:hover + #hiddenImage {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
-    <h1>▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀</h1>
-<h2> Teams and Drivers</h2>
-<h3>Red Bull Racing</h3>
-<ul> 
+  <h1>▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀</h1>
+  <h2>Teams and Drivers</h2>
+
+  <h3>Red Bull Racing</h3>
+  <ul>
     <li>Max Verstappen</li>
     <li>Yuki Tsunoda</li>
-</ul>
-<h2>Mercedes-AMG Petronas Formula One Team</h2>
-<ul>
-    <li>Andrea Kimi Antonelli</li>
-</ul>
-<h2>Scuderia Ferrari</h2>
-<ul>
-    <li> Sir Lewis Hamilton</li>
-    <li> Charles Leclerc</li>
-</ul>
-<h2>Aston Martin Aramco Formula One Team </h2>
-<ul>
-    <li>Fernando Alonso</li>
-</ul>
- <h2>Williams Racing</h2>
-<ul>
-    <li>Carlos Sainz Jr</li>
-</ul>
-<h2>Visa Cash App RB Formula 1 Team</h2>
-<ul>
-    <li>Isack Hadjar</li>
-</ul>
-</body>
-    
-</html>
+  </ul>
+  <div class="driver">
+    <img src="https://img.redbull.com/images/c_crop,x_1007,y_0,h_2646,w_1985/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2024/11/24/nrqoxx9as35r5ry8ashm/max-verstapen-2024-f1-world-champion-four" alt="Max Verstappen">
+    <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2024/5/2/ywewro4sprtoubgjddsr/yuki-tsunoda-visa-cash-app-rb" alt="Yuki Tsunoda">
+  </div>
 
-<!--
-<h1>2025 drivers and their teams</h1>
-   
-    
-  
-    <h2>Aston Martin Aramco Formula One Team</h2>
-    <h2>Williams Racing</h2>
-    <h2>Visa Cash App RB Formula 1 Team</h2>
-      
--->
+  <h2>Mercedes-AMG Petronas Formula One Team</h2>
+  <ul><li>Andrea Kimi Antonelli</li></ul>
+  <div class="driver">
+    <img src="https://images.ctfassets.net/1fvlg6xqnm65/1hkVQhURMuG9G7jBj5howl/5d29d2c9053d7d7720e0fba9ed1c2fbc/Kimi-Mexico-FP1-Web-Mobile.jpg?w=626&q=75&fm=webp" alt="Andrea Kimi Antonelli">
+  </div>
+
+  <h2>Scuderia Ferrari</h2>
+  <ul>
+    <li>Sir Lewis Hamilton</li>
+    <li>Charles Leclerc</li>
+  </ul>
+  <div class="driver">
+    <img src="https://www.topgear.com/sites/default/files/2025/03/2ff53add-d037-4dc2-8c09-11faa9b24eb8.jpg?w=976&h=549" alt="Lewis Hamilton">
+    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS6pCrn2oZWywP1N72EbdU8cL27Eazsf7bUmrhhGEqZiMpjOCohBYrS-wlOD4XNQS_EysIPtcMb3rHeBhs" alt="Charles Leclerc">
+  </div>
+
+  <h2>Aston Martin Aramco Formula One Team</h2>
+  <ul><li>Fernando Alonso</li></ul>
+  <div class="driver">
+    <img src="https://www.valvolineglobal.com/49831f/globalassets/vcom/racing--sponsorships/amf1/fernando-alonso-aston-martin-driver-2025-profile-photo.jpg" alt="Fernando Alonso">
+  </div>
+
+  <h2>Williams Racing</h2>
+  <ul><li>Carlos Sainz Jr</li></ul>
+  <div class="driver">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIIrPgBozye1ysoKzQfHsNRpfX7p1SAzm0pA&s" alt="Carlos Sainz Jr">
+  </div>
+
+  <h2>Visa Cash App RB Formula 1 Team</h2>
+  <ul><li>Isack Hadjar</li></ul>
+  <div class="driver">
+    <img src="https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/trackside-images/2025/F1_Grand_Prix_of_Netherlands___Previews/2232536711.webp" alt="Isack Hadjar">
+  </div>
+
+ 
+  <div id="secretSpot">Hover here to reveal!</div>
+  <img id="hiddenImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJPtXs8v_BBdPpBauQcsSVj4A9brNUg9W7A&s" alt="Hidden Surprise">
+</body>
+</html>
