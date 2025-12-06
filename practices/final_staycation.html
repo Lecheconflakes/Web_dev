@@ -1,77 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>Park City Vacation</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✮Park City✮</title>
-</head>
-<body>
-     <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
         body {
-            background-color: rgb(255, 176, 176);
+            background-color: rgb(164, 178, 240); 
             font-size: 18px;
-            color: rgb(246, 251, 255);
-            font-family:Arial, Helvetica, sans-serif;
-            font-weight: 600;
+            color: rgb(255, 255, 255); 
+            font-family: "Titillium Web", sans-serif;
             margin: 0;
             padding: 0;
         }
         h1 {
             text-align: center;
             margin: 20px;
-            font-size: 4rem;
-        }
-        #content-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-            padding: 20px;
+            font-size: 2.5rem;
+            color: rgb(255, 255, 255); 
         }
         #text-selection {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
         }
-        img {
-            max-width: 45%;
-            height: auto;
+        .top-image {
+            display: block;
+            width: 70%;
+            margin: 0 auto 20px auto;
             border-radius: 8px;
         }
-        h2, h3 {
-            margin-bottom: 10px;
-            font-size: 2rem;
-        }
-        p {
-            line-height: 1.5;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        a {
-            color: rgb(245, 141, 182);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        #image-row {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
+        #image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
             margin: 20px 0;
         }
-        #image-row img {
-            max-width: 50%;
-            height: auto;
-            border-radius: 3px;
+        #image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        #hover-img:hover {
+            transform: scale(1.05);
         }
         #toggle-btn {
             padding: 10px 20px;
             font-size: 16px;
-            cursor:pointer;
-            background-color: #ff8fd4;
-            color: rgb(0, 0, 0);
+            cursor: pointer;
+            background-color: rgb(96, 8, 197);
+            color: white;
             border: none;
             border-radius: 5px;
         }
@@ -79,26 +61,80 @@
             display: none;
             text-align: center;
             margin-top: 20px;
+            padding: 15px;
+            background-color: #6f5be0; 
+            border-radius: 8px;
         }
         #extra-content img {
-            max-width: 50%;
+            width: 80%; 
             border-radius: 8px;
-        }#grad1 {
-             height: 200px;
-             background-color: rgb(250, 177, 177); 
-            background-image: linear-gradient(to bottom right, rgb(248, 157, 157), rgb(250, 160, 99));
         }
-   </style>
-   <h1>☆ ☆  Park City ☆ ☆ </h1>
-   
+    </style>
+</head>
+<body>
+    <h1>⋆꙳·̩̩͙❅*̩̩͙‧͙ ‧͙*̩̩͙❆ ͙͛ ˚₊⋆⋆꙳·̩̩͙❅*̩̩͙‧͙ ‧͙*̩̩͙❆ ͙͛ ˚₊⋆⋆꙳ Park City ˚₊⋆⋆꙳·̩̩͙❅*̩̩͙‧͙ ‧͙*̩̩͙❆ ͙͛ ˚₊⋆⋆꙳·̩̩͙❅*̩̩͙‧͙ ‧͙*̩̩͙❆ ͙͛ ˚₊⋆</h1>
+  
+    <img class="top-image" src="https://tzassets.bestwestern.com/wp-content/uploads/2023/06/06184824/GettyImages-175397522-scaled.jpg"
+         alt="Park City Scenic View">
 
-   
-   <div id="image-row">
-            <img src="https://www.aarp.org/content/dam/aarp/travel/destinations/2023/02/1140-park-city-utah-fall.jpg" alt="Park city view" height="400px"/>
-          
+    <div id="text-selection">
+        <h3>Why Park City?</h3>
+        <p>Park City offers world-class skiing and year-round outdoor recreation, historic Main Street with charming shops and restaurants, and a rich cultural scene including the Sundance Film Festival and Olympic legacy. It’s a destination for all seasons, from winter sports like skiing, bobsledding, and snow tubing to summer pursuits like hiking, biking, fishing, and golfing. Its easy access from Salt Lake City, combined with its blend of outdoor adventure and cultural experiences, makes it a popular vacation spot.</p>
+
+        <img src="https://media.istockphoto.com/id/1149062265/photo/park-city-utah.jpg?s=612x612&w=0&k=20&c=1l7hpzCPjuMcERtQzLD6EpCM_NQSo_2ke6fZmJ1Z7wE="  
+             alt="Park City Main Street">
+
+        <h2>Go To Places</h2>
+<ul>
+    <li>Park City Mountain Resort & Deer Valley Resort: These are great places to ski and snowboard. People visit because the snow is good and there are lots of trails.</li>
+    <li>Utah Olympic Park: This is where the 2002 Winter Olympics happened. You can see the old stadiums, ride a bobsled, and learn about Olympic history.</li>
+    <li>Woodward Park City: This park has fun things like trampolines, a mountain coaster, and snow tubing. It’s a good spot for families and kids who want action sports.</li>
+    <li>No Name Saloon & The Spur: These are popular bars on Main Street. Visitors go here to hang out, eat, and enjoy the nightlife in Park City.</li>
+    <li>Riverhorse on Main & Grappa: These are fancy restaurants. People like them because the food is really good and it’s a nice way to end the day.</li>
+</ul>
+
+        <div id="image-grid">
+            <img id="hover-img" 
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RdAroMvtg_QExAjNoYNU5M9sQMq3Mcw5cg&s"  
+                 alt="Park City fall view">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ywULagBciZTwemXR4qISNtWIko6SuPhg3g&s"  
+                 alt="Park City mountain">
+            <img src="https://abodeparkcity.com/wp-content/uploads/2022/06/snowparkcity-768x511-1.jpg"  
+                 alt="Park City ski resort">
+        </div>
+    </div>
+
+    <div id="extra-content">
+        <p>Park City is also famous for its vibrant nightlife and cultural events. Visitors can enjoy live music, art galleries, and the world-renowned Sundance Film Festival, which attracts filmmakers and celebrities from around the globe.</p>
+        <img src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/ituwlrslnzmixsvods1z"
+             alt="Sundance Film Festival">
+    </div>
+
+    <div style="text-align:center; margin:20px;">
+        <button id="toggle-btn">Show More</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("toggle-btn");
+        const extraContent = document.getElementById("extra-content");
+
+        button.addEventListener("click", function() {
+            if (extraContent.style.display === "none" || extraContent.style.display === "") {
+                extraContent.style.display = "block";
+                button.textContent = "Hide Content";
+            } else {
+                extraContent.style.display = "none";
+                button.textContent = "Show More";
+            }
+        });
+
+        const hoverImg = document.getElementById("hover-img");
+        hoverImg.addEventListener("mouseover", function() {
+            hoverImg.src = "https://www.alpineskiproperties.com/wp-content/uploads/2019/08/park-city-in-the-fall-1-1.jpg"; 
+        });
+        hoverImg.addEventListener("mouseout", function() {
+            hoverImg.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RdAroMvtg_QExAjNoYNU5M9sQMq3Mcw5cg&s"; 
+        });
+    </script>
 </body>
 </html>
-<!--<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Park_City_overview.jpg" alt="Park city view" height="400px"/>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0VkL2r6GozQTLf7K9D6YgO0SMVwHWS6EbEw&s" alt="Park city view" height="400px"/>
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ywULagBciZTwemXR4qISNtWIko6SuPhg3g&s" alt="Park city view" height="400px"/>
-    
